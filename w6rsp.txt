@@ -1,0 +1,29 @@
+@startuml
+start
+:get A input(scissor, rock, paper);
+:get B input(scissor, rock, paper);
+if (A is 'scissor')
+   if (B is 'rock')
+      :print "B win";
+   elseif (B is 'paper')
+      :print "A win";
+   elseif (B is 'scissor')
+      :print "draw";
+elseif (A is 'rock')
+   if (B is 'scissor')
+      :print "A win";
+   if (B is 'paper')
+      :print "B win";
+   if (B is 'rock')
+      :print "draw";
+elseif (A is 'paper')
+   if (B is 'scissor')
+      :print "B win";
+   if (B is 'rock')
+      :print "A win";
+   if (B is 'paper')
+      :print "draw";
+
+endif
+stop
+@enduml
