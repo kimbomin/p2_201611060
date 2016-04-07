@@ -1,9 +1,16 @@
-﻿def 1000():
+def plus():
     sum=0 
     for i in range (1,1000):
-      if i % 3 == 0 or i % 5 == 0:
-          sum += i
+        if i % 3 == 0 or i % 5 == 0:
+            sum += i
     print sum
+
+def year():
+    year=input("input year:")
+    if (year%4==0) and (year%100!=0 or year%400==0):
+        print "leap year"
+    else:
+        print "no leap yeard"
 
 def highlow():
     import random
@@ -37,14 +44,16 @@ def highlow():
     
     if guess != number:
         number = str(number)
-        print('아쉽네..내가 생각한 숫자는 %s 야..') %number
-
-def lab6()
-    1000()
-    highlow()
+        print('아쉽네..내가 생각한 숫자는 %s (이)야..') %number
     
+
+def lab6():
+    plus()
+    year()
+    highlow()
+
 def main():
     lab6()
-
+    
 if __name__=="__main__":
     main()
