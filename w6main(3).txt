@@ -1,0 +1,15 @@
+start
+
+:get user name;
+:get randint number (1<= random number <=10);
+
+repeat
+:input user number;
+if (user number < random number)
+:print too low;
+elseif (user number > random number)
+:print too high;
+endif
+repeat while (user number = random number)
+
+stop
